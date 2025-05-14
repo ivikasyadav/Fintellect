@@ -26,12 +26,12 @@ const Login1 = () => {
 
             // 3. Try the first endpoint to create the user
             try {
-                // await axios.post('http://localhost:8000/users', {
-                //     user: {
-                //         email: userData.email,
-                //         username: userData.name,
-                //     },
-                // });
+                await axios.post('http://localhost:8000/users', {
+                    user: {
+                        email: userData.email,
+                        username: userData.name,
+                    },
+                });
                 console.info('User created successfully using first endpoint.');
             } catch (err) {
                 // Handle the case where user already exists on the first endpoint
