@@ -1,0 +1,51 @@
+@import "tailwindcss"; 
+
+/* .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+  
+    height: 100%;
+    width: 300px;
+
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    right: 0;
+  
+} 
+  */
+
+  /* .react-datepicker__year-select {
+      @apply text-sm p-1 rounded border border-gray-300 w-24;
+  }
+
+  .react-datepicker__month-select {
+      @apply text-sm p-1 rounded border border-gray-300 w-24;
+  } */
+  /* Make the year dropdown compact */
+  .react-datepicker__year-select {
+      @apply text-sm p-1 rounded border border-gray-300 w-24;
+      /* small font and padding */
+  }
+
+  /* Make the month dropdown compact */
+  .react-datepicker__month-select {
+      @apply text-sm p-1 rounded border border-gray-300 w-24;
+      /* small font and padding */
+  }
+
+  /* Adjust dropdown height for better compactness */
+  .react-datepicker__year-dropdown,
+  .react-datepicker__month-dropdown {
+      @apply max-h-32 overflow-y-auto;
+      /* Smaller height */
+  }
+
+  /* Adjust options for smaller size */
+  .react-datepicker__year-option,
+  .react-datepicker__month-option {
+      @apply text-sm py-1 px-2 hover:bg-gray-100 cursor-pointer;
+      /* Smaller option size */
+  }
